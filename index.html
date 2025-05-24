@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>KURT3 Helper</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen font-sans">
+  <div class="bg-white p-8 rounded-2xl shadow-lg max-w-md w-full text-center space-y-6">
+    <h1 class="text-2xl font-bold text-gray-800">📅 KURT3 Booking Helper</h1>
+
+    <div class="space-y-2">
+      <label for="datePicker" class="block text-gray-600 font-medium">
+        Select a booking date:
+      </label>
+      <input type="date" id="datePicker"
+        class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+    </div>
+
+    <button onclick="submitDate()"
+      class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow transition">
+      Open Booking Page
+    </button>
+
+    <p class="text-sm text-gray-500 mt-4">
+      ⚠️ The selected date won’t be visible on the KULeuven site. It only takes effect silently when you select a seat.
+    </p>
+    <p class="text-xs text-gray-400">
+      ⚠️ This tool was built for educational purposes only and is not affiliated with or endorsed by KU Leuven.
+    </p>
+
+  </div>
+
+  <script>
+    function submitDate() {
+      const date = document.getElementById("datePicker").value;
+      if (!date) {
+        alert("Please select a date first.");
+        return;
+      }
+
+      window.electronAPI.setDate(date);
+    }
+  </script>
+</body>
+
+</html>

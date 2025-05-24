@@ -1,0 +1,34 @@
+{
+  "name": "kurt3-helper",
+  "version": "1.0.0",
+  "description": "KURT3 Booking Helper",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "be.matsevh.kurt3.helper",
+    "productName": "KURT3 Helper",
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^26.0.12"
+  }
+}
