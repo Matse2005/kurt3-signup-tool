@@ -47,10 +47,6 @@ This will create a distributable version for your platform (Windows/Linux/macOS)
 
 Uses [electron-builder](https://www.electron.build/) for cross-platform builds.
 
-## License
-
-MIT (or specify your license)
-
 ---
 
 **Made by [Matse Van Horebeek](https://github.com/matse2005)**
