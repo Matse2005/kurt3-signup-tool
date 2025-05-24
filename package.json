@@ -1,21 +1,22 @@
 {
-  "name": "kurt3-helper",
+  "name": "kurt3-signup-tool",
   "version": "1.0.0",
-  "description": "KURT3 Booking Helper",
+  "description": "KURT3 Signup Tool",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder"
   },
   "build": {
-    "appId": "be.matsevh.kurt3.helper",
-    "productName": "KURT3 Helper",
+    "appId": "be.matsevh.kurt3.signup.Tool",
+    "productName": "KURT3 Signup Tool",
     "directories": {
       "buildResources": "assets",
       "output": "dist"
     },
     "files": [
-      "**/*"
+      "**/*",
+      "build/icon.*"
     ],
     "mac": {
       "target": "dmg"

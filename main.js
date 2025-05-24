@@ -17,7 +17,7 @@ function createWindow() {
       contextIsolation: true,
       preload: path.join(__dirname, "preload.js"),
     },
-    icon: __dirname + "/build/logo.png",
+    icon: __dirname + "/build/icon.png",
   });
 
   win.loadFile("index.html");
@@ -55,14 +55,14 @@ function createWindow() {
     win.loadURL(
       "https://kurt3.ghum.kuleuven.be/selection?locationId=1&resourceTypeId=302"
     );
-    setupMenu(); // refresh menu with updated date
+    setupMenu();
   });
 }
 
 function setupMenu() {
   const template = [
     {
-      label: "KURT3 Helper",
+      label: "KURT3 Signup Tool",
       submenu: [
         {
           label: `Current Date: ${getFormattedDate()}`,
