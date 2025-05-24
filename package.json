@@ -1,6 +1,6 @@
 {
   "name": "kurt3-signup-tool",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "KURT3 Signup Tool",
   "main": "main.js",
   "scripts": {

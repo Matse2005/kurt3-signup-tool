@@ -1,4 +1,4 @@
-# KURT3 Helper
+# KURT3 Signup Tool
 
 A small desktop helper tool built with Electron to make the KULeuven KURT3 booking system slightly easier to use by pre-filling the booking date.
 
